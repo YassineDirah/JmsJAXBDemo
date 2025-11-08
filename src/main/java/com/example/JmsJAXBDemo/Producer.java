@@ -14,6 +14,6 @@ public class Producer {
 
     public void sendMessage(String destination, String message) {
         jmsTemplate.convertAndSend(destination, message);
-        log.info("Message " + message + "has been sent");
+        log.info("Just sent User :" + message);
     }
 }
